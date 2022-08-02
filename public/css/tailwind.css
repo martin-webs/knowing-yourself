@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Montserrat:ital,wght@0,600;0,700;0,800;1,500&family=Source+Sans+3:ital,wght@0,800;1,700&display=swap');
+
+.btn {
+	@apply w-full h-14 py-7 px-12 mb-[20px] rounded-lg bg-white border-4 flex justify-center items-center font-bold text-[18px] leading-[18px] md:mx-3 md:text-base md:px-0 md:w-[200px];
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>Knowing Yourself</title>
+</head>
+
+<body class="w-screen min-w-[500px] h-screen min-h-full text-base font-inter m-auto">
+	<header class="py-3 font-montserrat min-h-[50px]">
+		<div class="px-8 flex flex-row justify-between">
+			<h1 class="py-4 text-3xl font-black text-blue-600 leading-[28px]">Knowing Yourself</h1>
+			<div class="flex flex-row gap-4">
+				<a href="/login" class="hidden md:block self-center text-gray-500">Login</a>
+				<a href="/signup"
+					class="hidden py-2 px-4 bg-blue-600 rounded text-white font-bold text-sm self-center md:block">Sign Up</a>
+			</div>
+			<div class="self-center md:hidden">
+				<div class="w-7 border-b-2 mb-1 border-blue-500 border rounded"></div>
+				<div class="w-7 border-b-2 mb-1 border-blue-500 border rounded"></div>
+				<div class="w-7 border-b-2 mb-1 border-blue-500 border rounded"></div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="bg-blue-600 font-inter font-black">
+			<div class="p-12 pb-0 text-white">
+				<p
+					class="text-7xl leading-[1.07] tracking-normal text-center font-montserrat font-black lg:leading-[1.4] md:text-5xl">
+					Everyone has been given a name and a number. What do
+					they mean?
+				</p>
+				<p class="mt-16 mb-8 leading-[1.4] tracking-[0.1px] text-[2rem] font-light text-center md:text-2xl">Think of
+					your birthdate, just the day. Reduce it to one digit. If it has two digits, add them. You should get one
+					number. Turns out there are nine personality types (1 - 9), and we all haves a bit of all of them. Use your
+					birthday number and read about your personality. (You are right, this is not science, it's just for fun.)
+				</p>
+			</div>
+			<div class="h-72 pb-4 px-8 flex flex-col items-center  md:flex-row justify-center md:h-36">
+				<a href="/login" class="btn text-blue-500 border-blue-500"><span class="drop-shadow-3xl">Sign Up with
+						Email</span></a>
+				<a href="/signup" class="btn text-pink-500 border-pink-500"><span class="drop-shadow-3xl">Sign Up with
+						Github</span></a>
+				<a href="/github" class="btn text-red-500 border-red-500"><span class="drop-shadow-3xl">Sign Up with Google</span></a>
+			</div>
+		</div>
+		<form action="/birthday" method="POST" class="py-12 text-xl text-[#525254]">
+			<h2 class="mr-2 mb-8 text-center text-3xl font-bold">About Your<br> Birthday Number</h2>
+			<div class="flex w-fit m-auto">
+				<div class="mr-3">
+					<div>Enter your birthday:</div>
+					<div class="text-base text-center">(0 - 31)</div>
+				</div>
+				<div class="flex">
+					<label class="mr-4">
+						<input type="text" name="typeNumber" class="h-[48px] w-[116px] py-2 form-input rounded text-center text-xl border-gray focus:border-none focus:ring focus:drop-shadow-3xl">
+					</label>
+					<button type="submit" class="h-[48px] bg-blue-600 text-white text-base px-8 rounded hover:drop-shadow-3xl">Submit</button>
+				</div>
+			</div>
+		</form>
+	</main>
+	<footer class="h-10">
+
+	</footer>
+</body>
+
+</html>
