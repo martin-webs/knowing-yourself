@@ -10,7 +10,8 @@ router.post("/", (req, res) => {
 		 typeNumber = parseInt(digit1) + parseInt(digit2);
     res.redirect(`https://www.enneagraminstitute.com/type-${typeNumber}`);
   } else {
-		res.send('Please enter a number between 0 and 31');
+		// res.send('Please enter a number between 0 and 31');
+		res.redirect('/yourname');
 	}
 });
 

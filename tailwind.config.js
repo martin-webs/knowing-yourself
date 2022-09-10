@@ -13,6 +13,9 @@ module.exports = {
     extend: {
       dropShadow: {
         '3xl': '0px 6px 7px rgba(169, 170, 173, 1)',
+      },
+      gridTemplateColumns: {
+        'footer-list': '2fr 3fr'
       }
     },
   },

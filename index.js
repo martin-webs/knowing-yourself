@@ -14,9 +14,12 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
 /* routes */
-// app.get('/yourname', (req, res) => {
-// 	res.render('pages/yourname');
-// })
+app.get('/', (req, res) => {
+	res.render('index');
+})
+app.get('/yourname', (req, res) => {
+	res.render('pages/yourname');
+})
 app.use('/birthday', birthdayRoutes);
 
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
